@@ -8,9 +8,9 @@ var inputComponent = function() {
         this.onTyped = this.onTyped.bind(this);
 
         this.element.addEventListener('keyup', this.onTyped);
-    }
+    };
 
     this.onTyped = function(e) {
         onestate.setState(this.element.id, {'text': this.element.value});
-    }
+    };
 };
