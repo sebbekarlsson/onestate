@@ -6,6 +6,7 @@
 
     <head>
         <!-- you should probably bundle these files -->
+        <script src='lib/ElemenTailor/elementailor.js'></script> <!-- for creating elements -->
         <script src='onestate.js'></script>
         <script src='inputComponent.js'></script>
         <script src='textComponent.js'></script>
@@ -22,10 +23,10 @@
 
     let inputComponent = () => {
         // creating the element
-        this.element = document.createElement('input');
-        this.element.setAttribute('type', 'text');
-        this.element.id = 'inputComponent';
-        
+        this.element = ElemenTailor.create('input', {
+            'id': 'inputComponent',
+            'type': 'text'
+        }); 
 
         this.onMount = () => {
             this.onTyped = this.onTyped.bind(this);
@@ -43,8 +44,10 @@
 
     let textComponent = () => {
         // creating the element
-        this.element = document.createElement('div');
-        this.element.className += 'textComponent';
+        this.element = ElemenTailor.create('div', {
+            'class': 'textComponent',
+            'id': 'textComponent'
+        });
 
         this.tick = () => {
             var text = onestate.getState()['inputComponent'].text;

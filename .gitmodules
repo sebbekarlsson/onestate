@@ -1,0 +1,3 @@
+[submodule "lib/ElemenTailor"]
+	path = lib/ElemenTailor
+	url = git@github.com:sebbekarlsson/ElemenTailor.git

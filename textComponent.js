@@ -1,6 +1,8 @@
 var textComponent = function() {
-    this.element = document.createElement('div');
-    this.element.className += 'textComponent';
+    this.element = ElemenTailor.create('div', {
+        'class': 'textComponent',
+        'id': 'textComponent'
+    });
 
     this.tick = function() {
         var text = onestate.getState()['inputComponent'].text;

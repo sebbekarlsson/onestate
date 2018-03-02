@@ -1,9 +1,9 @@
 var inputComponent = function() {
-    this.element = document.createElement('input');
-    this.element.setAttribute('type', 'text');
-    this.element.id = 'inputComponent';
+    this.element = ElemenTailor.create('input', {
+        'id': 'inputComponent',
+        'type': 'text'
+    });
     
-
     this.onMount = function() {
         this.onTyped = this.onTyped.bind(this);
 
