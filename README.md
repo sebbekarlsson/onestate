@@ -46,7 +46,7 @@
         this.element = document.createElement('div');
         this.element.className += 'textComponent';
 
-        this.tick = function() {
+        this.tick = () => {
             var text = onestate.getState()['inputComponent'].text;
 
             if (typeof text != 'undefined')
