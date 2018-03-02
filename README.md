@@ -1,5 +1,5 @@
 # onestate.js
-> Sort of like `React` but does not render anything.
+> Sort of like `React` but not try to be as smart.
 
 ## Usage
 > markup:
@@ -20,26 +20,29 @@
 
     // inputComponent.js
 
-    var inputComponent = function() {
+    let inputComponent = () => {
+        // creating the element
         this.element = document.createElement('input');
         this.element.setAttribute('type', 'text');
         this.element.id = 'inputComponent';
         
 
-        this.onMount = function() {
+        this.onMount = () => {
             this.onTyped = this.onTyped.bind(this);
 
             this.element.addEventListener('keyup', this.onTyped);
         }
 
-        this.onTyped = function(e) {
+        this.onTyped = (e) => {
+            // change the current state, and bind it to this element id
             onestate.setState(this.element.id, {'text': this.element.value});
         }
     }
     
     // textComponent.js
 
-    var textComponent = function() {
+    let textComponent = () => {
+        // creating the element
         this.element = document.createElement('div');
         this.element.className += 'textComponent';
 
