@@ -74,4 +74,8 @@ var onestate = {
     }
 }
 
-window.onestate = onestate;
+if (typeof window !== 'undefined')
+    window.onestate = onestate;
+
+if (typeof module !== 'undefined' && module.exports)
+    module.exports = onestate;
