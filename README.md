@@ -1,5 +1,5 @@
 # onestate.js
-> Sort of like `React` but not try to be as smart.
+> Sort of like `React` but not trying to be as smart.
 
 ## Usage
 > markup:
