@@ -24,9 +24,8 @@ var onestate = {
      * Add a component to the document
      */
     'instantiate': function(component, selector) {
-        if (typeof component.element === 'undefined') {
+        if (typeof component.element === 'undefined')
             return console.error('component needs an element.');
-        }
 
         document.querySelector(selector).appendChild(component.element);
         
@@ -64,9 +63,8 @@ var onestate = {
      * Update or change a value in the current application state
      */
     'setState': function(componentId, data) {
-        for (var property in data) {
+        for (var property in data)
             this.state[componentId][property] = data[property];
-        }
 
         this.tick();
 
