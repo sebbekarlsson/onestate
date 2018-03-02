@@ -13,4 +13,4 @@ var inputComponent = function() {
     this.onTyped = function(e) {
         onestate.setState(this.element.id, {'text': this.element.value});
     }
-}
+};

@@ -10,4 +10,4 @@ var textComponent = function() {
         if (typeof text != 'undefined')
             this.element.innerHTML = text;
     }
-}
+};
