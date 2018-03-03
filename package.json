@@ -1,0 +1,28 @@
+{
+  "name": "onestate",
+  "version": "1.0.0",
+  "description": "sort of like react but not trying to be as smart. Components and a global state.",
+  "main": "onestate.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebbekarlsson/onestate.git"
+  },
+  "keywords": [
+    "state",
+    "react",
+    "components",
+    "framework"
+  ],
+  "author": "ianertson@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebbekarlsson/onestate/issues"
+  },
+  "homepage": "https://github.com/sebbekarlsson/onestate#readme"
+}
