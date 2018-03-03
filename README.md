@@ -2,6 +2,11 @@
 > Sort of like `React` but not trying to be as smart.
 
 ## Usage
+* [creating the context](CREATING_THE_CONTEXT.md)
+* [writing components](WRITING_COMPONENTS.md)
+* [mounting components](MOUNTING_COMPONENTS.md)
+
+## Usage
 > markup:
 
     <head>
