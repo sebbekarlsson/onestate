@@ -1,6 +1,6 @@
 {
   "name": "onestate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sort of like react but not trying to be as smart. Components and a global state.",
   "main": "onestate.js",
   "directories": {
