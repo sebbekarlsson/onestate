@@ -3,7 +3,7 @@
 ## Components are functions
 > All components are functions, they can be defined like this:
 
-    var inputComponent = () => {};
+    var inputComponent = function() {};
 
 > You will get an error if you try to mount this component, because it has
 > no `element`.
@@ -11,7 +11,7 @@
 ## All components needs an element to be mounted
 > You have to specify an element:
 
-    var inputComponent = () => {
+    var inputComponent = function() {
         this.element = document.createElement('input');
         this.element.id = 'mainInput'; // the state will be bound to this id
         this.element.type = 'text';
@@ -24,7 +24,7 @@
 > onMount is called when a component is mounted, below is an example where
 > I add an eventListener to the element once mounted:
 
-    var inputComponent = () => {
+    var inputComponent = function() {
         ...
 
         this.onMount = () => {
@@ -38,7 +38,7 @@
 > Writing and reading the state is easy, below I will save the value of the
 > input element in the state:
 
-    var inputComponent = () => {
+    var inputComponent = function() {
         ...
 
         this.onMount = () => {
